@@ -20,7 +20,7 @@ if __name__=="__main__":
 	model=load_model()
 	print(model.summary())
 
-	callback_save = ModelCheckpoint("123.h5", monitor='loss', save_best_only=True)
+	callback_save = ModelCheckpoint("new_model.h5", monitor='loss', save_best_only=True)
 
 	callback_early_stopping = EarlyStopping(monitor='loss', patience=3)
 
